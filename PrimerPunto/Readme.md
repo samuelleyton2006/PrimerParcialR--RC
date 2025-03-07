@@ -25,6 +25,9 @@ Onda 1 con frecuencia 1/10 Hz
 Onda 2 con frecuencia 2 Hz
 Onda 3 con frecuencia 5 Hz
 
-Ahora, si queremos visualizar la suma de las ondas, podemos hacerlo mediante el uso del programa R, que se encuentra en la carpeta scr. 
+Ahora, si queremos visualizar la suma de las ondas, podemos hacerlo mediante el uso del programa R, que se encuentra en la carpeta scr.
+![alt text](https://github.com/samuelleyton2006/PrimerParcialR--RC/blob/main/PrimerPunto/scr/Sumas.png?raw=true)
+Tener encuenta que estas funciones siguen en el dominio del tiempo.
+
 
 
