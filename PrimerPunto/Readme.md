@@ -25,3 +25,6 @@ Onda 1 con frecuencia 1/10 Hz
 Onda 2 con frecuencia 2 Hz
 Onda 3 con frecuencia 5 Hz
 
+Ahora, si queremos visualizar la suma de las ondas, podemos hacerlo mediante el uso del programa R, que se encuentra en la carpeta scr. 
+
+
