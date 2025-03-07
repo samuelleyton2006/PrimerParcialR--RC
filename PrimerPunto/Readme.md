@@ -20,4 +20,5 @@ La implementacion de fourier en la modulacion y de la desmodulacion de la señal
 
 # Grafica de Fourier
 Para esto creamos 3 funciones sinusoidal con diferentes frecuencias e amplitudes:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/samuelleyton2006/PrimerParcialR--RC/blob/main/PrimerPunto/scr/FUNCIONES.png?raw=true)
+
