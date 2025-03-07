@@ -31,3 +31,7 @@ Tener encuenta que estas funciones siguen en el dominio del tiempo.
 # Transformada de fourier
 ![alt text](https://github.com/samuelleyton2006/PrimerParcialR--RC/blob/main/PrimerPunto/scr/Transformada.png?raw=true)
 
+En la grafica podemos ver las diferentes frecuencias de las ondas, y para cada frecuencia tiene una amplitud o densidad diferente.
+Si la grafica muestra un pico pronunciado en una frecuencia especifica, significa que la señal contiene una gran cantidad de energia en esa frecuencia (señal predominante)
+Si la grafica tiene un espectro ancho, la señal ocupa varias frecuencias, como en los sistemas de espectro ensanchado (Wi-Fi o Bluetooth).
+
