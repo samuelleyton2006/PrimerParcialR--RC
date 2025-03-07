@@ -28,6 +28,6 @@ Onda 3 con frecuencia 5 Hz
 Ahora, si queremos visualizar la suma de las ondas, podemos hacerlo mediante el uso del programa R, que se encuentra en la carpeta scr.
 ![alt text](https://github.com/samuelleyton2006/PrimerParcialR--RC/blob/main/PrimerPunto/scr/Sumas.png?raw=true)
 Tener encuenta que estas funciones siguen en el dominio del tiempo.
-
-
+# Transformada de fourier
+![alt text](https://github.com/samuelleyton2006/PrimerParcialR--RC/blob/main/PrimerPunto/scr/Transformada.png?raw=true)
 
