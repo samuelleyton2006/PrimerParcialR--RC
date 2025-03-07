@@ -12,3 +12,10 @@ Aplicando la Transformada de Fourier, esta señal se convierte en el dominio de 
 Adaptive Frequency Hopping (AFH)
 
 Bluetooth emplea una técnica llamada Adaptive Frequency Hopping (AFH), donde salta entre diferentes frecuencias para minimizar la interferencia. La TF ayuda a detectar los canales más congestionados y evitar que Bluetooth los use en su esquema de saltos.
+
+# Modulacion y desmodulacion de la señal
+La modulacion consiste en transformar una señal original de baja frecuencia en una señal de alta frecuencia mediante una señal portadora. Esto permite transmitir la información de manera eficiente a través del aire o de cables. Existen varias formas de modulacion, como la AM, FM, SPK, ASK.
+La implementacion de fourier en la modulacion y de la desmodulacion de la señal viene cuando la señal va a hacer desmodulada, la TF permite identificar las frecuencias utiles, pudiendole identificar las señales basura/ruido para solo usar las señales que contienen informacion importante.
+
+
+# Grafica de Fourier
