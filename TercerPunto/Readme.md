@@ -34,3 +34,10 @@ resultado_tcp = simular_tcp_congestion()
 mostrar_evolucion(resultado_tcp)
 
 ```
+/n
+/n
+
+
+
+
+Hola samuel
