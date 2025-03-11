@@ -1,4 +1,4 @@
-# Tercer Punto 
+#Punto 3: Comportamiento de TCP ante Congestión de Red
 
 ``` py
 import random
