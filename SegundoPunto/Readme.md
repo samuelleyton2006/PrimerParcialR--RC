@@ -166,5 +166,10 @@ En la terminal del servidor podemos ver como es que se maneja
  
 ![imagen2](src/SerTermi.jpeg)
 
+
+Posterior a esto tambien podemos ver como es que se ve la terminal del cliente con todos los requerimientos que tenia .
+
+![imagen3](src/CliTermi.jpeg)
+
 ---
 
