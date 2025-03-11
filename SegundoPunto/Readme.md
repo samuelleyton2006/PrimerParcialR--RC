@@ -13,34 +13,6 @@ Este proyecto implementa un **chat basado en sockets TCP** en Python, donde múl
 
 ---
 
-## 🚀 Instalación y Ejecución
-
-### **1️⃣ Clonar el repositorio**
-```bash
- git clone https://github.com/tuusuario/chat-sockets-tkinter.git
- cd chat-sockets-tkinter
-```
-
-### **2️⃣ Instalar dependencias (Opcional, si no tienes Tkinter instalado)**
-Tkinter viene preinstalado en Python, pero si usas Linux y no lo tienes:
-```bash
-sudo apt-get install python3-tk
-```
-
-### **3️⃣ Ejecutar el servidor**
-Ejecuta el siguiente comando para iniciar el servidor:
-```bash
-python server.py
-```
-
-### **4️⃣ Ejecutar los clientes**
-Abre una nueva terminal y ejecuta:
-```bash
-python client.py
-```
-Puedes abrir múltiples instancias para conectar varios clientes.
-
----
 
 ## 🖥️ Código del Servidor (`server.py`)
 ```python
