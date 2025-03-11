@@ -1,4 +1,4 @@
-# Segundo Punto 
+# Tercer Punto 
 
 ``` py
 import random
