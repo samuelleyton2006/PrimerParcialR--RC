@@ -160,7 +160,7 @@ cliente_socket.close()
 
 Este proyecto se desarrollo en conjunto buteando 5 pc de el salon F403 y conectando el proyector para usar ese pc como servidor y poder visualizar de manera mas sencilla lo que entra y sale del servidor .
 
-![Ejemplo de imagen](src/Salon1.png)
+![Ejemplo de imagen](src/Salon1.jpeg)
 
 ---
 
