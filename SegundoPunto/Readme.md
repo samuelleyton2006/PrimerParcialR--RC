@@ -164,7 +164,7 @@ Este proyecto se desarrollo en conjunto buteando 5 pc de el salon F403 y conecta
 
 En la terminal del servidor podemos ver como es que se maneja 
  
-![imagen2](src/Salon1.jpeg)
+![imagen2](src/SerTermi.jpeg)
 
 ---
 
