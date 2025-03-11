@@ -156,9 +156,11 @@ cliente_socket.close()
 
 ---
 
-## 📜 Licencia
-Este proyecto está bajo la Licencia MIT. ¡Siéntete libre de usarlo y mejorarlo! 🎉
+## 📜 Demostracion del codigo en accion 
+
+Este proyecto se desarrollo en conjunto buteando 5 pc de el salon F403 y conectando el proyector para usar ese pc como servidor y poder visualizar de manera mas sencilla lo que entra y sale del servidor .
+
+![Ejemplo de imagen](src/Salon1.png)
 
 ---
 
-¡Disfruta programando! 🚀
