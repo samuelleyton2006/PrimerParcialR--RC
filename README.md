@@ -1,2 +1,2 @@
 # PrimerParcialR--RC
-Parcial Redes De Computación de Samuel leyton-William Alfonso -Felipe Morales 
+Parcial Redes De Computación de Samuel Leyton-William Alfonso -Felipe Morales 
