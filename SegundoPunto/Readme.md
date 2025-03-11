@@ -2,7 +2,7 @@
 
 # Chat con Servidor y Clientes en Python usando Sockets y Tkinter
 
-Este proyecto implementa un **chat basado en sockets TCP** en Python, donde múltiples clientes pueden conectarse a un servidor y comunicarse entre sí. Cada cliente ingresa su nombre antes de conectarse, y el servidor confirma la recepción de los mensajes.
+Este proyecto implementa un **chat basado en sockets ** en Python, donde múltiples clientes pueden conectarse a un servidor y comunicarse entre sí. Cada cliente ingresa su nombre antes de conectarse, y el servidor confirma la recepción de los mensajes.
 
 ## 📌 Características
 - **Servidor en el puerto 2010** que acepta múltiples clientes.
