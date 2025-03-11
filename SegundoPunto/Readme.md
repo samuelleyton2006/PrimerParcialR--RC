@@ -4,6 +4,9 @@
 
 Este proyecto implementa un **chat basado en sockets en Python, donde múltiples clientes pueden conectarse a un servidor y comunicarse entre sí. Cada cliente ingresa su nombre antes de conectarse, y el servidor confirma la recepción de los mensajes.
 
+## Video de youtube demostrando su correcto funcionamiento .
+- **Video : https://www.youtube.com/shorts/2juuYoj6Ni8 
+  
 ## 📌 Características
 - **Servidor en el puerto 2010** que acepta múltiples clientes.
 - **Cada cliente ingresa su nombre** antes de conectarse.
@@ -169,7 +172,7 @@ En la terminal del servidor podemos ver como es que se maneja
 
 Posterior a esto tambien podemos ver como es que se ve la terminal del cliente con todos los requerimientos que tenia .
 
-![imagen3](src/CliTermi.jpeg)
+
 
 ---
 
