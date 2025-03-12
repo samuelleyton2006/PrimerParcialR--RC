@@ -1,7 +1,8 @@
 # PrimerParcialR--RC
 Parcial Redes De Computación de Samuel Leyton-William Alfonso -Felipe Morales 
 
->[!NOTE] 
+>[!NOTE]
+> PRIMER PUNTO : 
 >(https://github.com/samuelleyton2006/PrimerParcialR--RC/tree/main/PrimerPunto)
 
 >[!NOTE]
