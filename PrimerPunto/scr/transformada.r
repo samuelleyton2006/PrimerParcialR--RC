@@ -9,7 +9,7 @@ wave.1 <- 2*sin(2*pi*(1/10)*t)  # Onda 1 con frecuencia 1/10 Hz
 wave.2 <- 1*sin(2*pi*2*t)      # Onda 2 con frecuencia 2 Hz
 wave.3 <- 0.5*sin(2*pi*(5)*t) # Onda 3 con frecuencia 5 Hz
 
-# Crear DataFrame para la gráfica de señales
+# Crear DataFrame para la grafica de señales
 data <- data.frame(t, wave.1, wave.2, wave.3)
 
 # Graficar las ondas
@@ -18,7 +18,7 @@ fig1 <- plot_ly(data, x=~t, y=~wave.1, name="Onda 1", type="scatter", mode="line
     add_trace(y=~wave.3, name="Onda 3", mode="lines") %>%
     layout(title="Ondas en el tiempo", xaxis=list(range=c(0,20), title="Tiempo (s)"), yaxis=list(title="Amplitud"))
 
-# Mostrar la gráfica correctamente en VS Code
+# Mostrar la grafica si hay errores
 if (interactive()) fig1 else htmlwidgets::saveWidget(fig1, "ondas.html", selfcontained = TRUE)
 
 # Suma de ondas
@@ -34,11 +34,11 @@ fig2 <- plot_ly(data_sum, x=~t, y=~x, type="scatter", mode="lines") %>%
 if (interactive()) fig2 else htmlwidgets::saveWidget(fig2, "suma_ondas.html", selfcontained = TRUE)
 
 # **ESPECTRO DE FRECUENCIAS**
-x.spec <- spectrum(x, plot=FALSE)  # Evitar que genere una gráfica por defecto
+x.spec <- spectrum(x, plot=FALSE) 
 spx <- x.spec$freq * fs            # Convertir frecuencias normalizadas a Hz
 spy <- 2 * x.spec$spec              # Ajustar la densidad espectral
 
-# DataFrame para la gráfica espectral
+# DataFrame para la grafica espectarl
 data_spec <- data.frame(f=spx, espectro=spy)
 
 # Graficar el espectro de frecuencia
