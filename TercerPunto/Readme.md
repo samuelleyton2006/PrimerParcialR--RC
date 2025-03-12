@@ -65,7 +65,10 @@ mostrar_evolucion(resultado_tcp)
 
 
 # Grafica de la congestion
+Ejecucion #1
 ![imagen2](Src/graf.jpeg)
+Ejecucion #2
+![imagen3](Src/graf2.jpeg)
 
 
 Este código simula el control de congestión en TCP Tahoe, ajustando la ventana de congestión (cwnd) según eventos de éxito o pérdida de paquetes. La función evento_transmision() usa random.random() para simular transmisiones exitosas (80%) o fallidas (20%). simular_tcp_congestion() inicia cwnd = 1 y ejecuta 20 transmisiones, aumentando cwnd en cada éxito y reiniciándola a 1 en caso de pérdida. Los resultados se almacenan y mostrar_evolucion() los imprime. La simulación refleja fielmente cómo TCP maneja la congestión, aumentando gradualmente la ventana y reduciéndola drásticamente ante fallos, asegurando estabilidad y eficiencia en la red.
