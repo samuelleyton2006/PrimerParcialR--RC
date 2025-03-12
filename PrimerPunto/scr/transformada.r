@@ -1,8 +1,8 @@
 library(plotly)
-time <- 200
-fs <- 100  # Frecuencia de muestreo
-dt <- 1/fs
-t <- seq(0, time, by=dt)  # Vector de tiempo
+time <- 200 #Duracion total de tiempo en segundos
+fs <- 100  # Frecuencia de muestreo, 100 muestras por segundo
+dt <- 1/fs #Intervalo de muestreo, que es el tiempo que toma entre cada muestra
+t <- seq(0, time, by=dt)  # Vector de tiempo que va de 0, hasta 200 con razon de 1/fs
 
 # Generar ondas
 wave.1 <- 2*sin(2*pi*(1/10)*t)  # Onda 1 con frecuencia 1/10 Hz
@@ -34,9 +34,12 @@ fig2 <- plot_ly(data_sum, x=~t, y=~x, type="scatter", mode="lines") %>%
 if (interactive()) fig2 else htmlwidgets::saveWidget(fig2, "suma_ondas.html", selfcontained = TRUE)
 
 # **ESPECTRO DE FRECUENCIAS**
-x.spec <- spectrum(x, plot=FALSE) 
-spx <- x.spec$freq * fs            # Convertir frecuencias normalizadas a Hz
-spy <- 2 * x.spec$spec              # Ajustar la densidad espectral
+x.spec <- spectrum(x, plot=FALSE) #Calcula la Transformada de Fourier de x, obteniendo sus frecuencias y amplitudes.
+spx <- x.spec$freq * fs            # Convertir frecuencias normalizadas a Hz, que estaban en intervalos de muestreo por lo que 
+#multiplicamos por fs para obtener las frecuencias 
+spy <- 2 * x.spec$spec              #  representa la densidad espectral de potencia (DSP).
+# Multiplicamos por 2 porque spectrum() solo devuelve la mitad del espectro (debido a la simetría de Fourier en señales reales).
+# Esto nos da la energía real de cada frecuencia en la señal.
 
 # DataFrame para la grafica espectarl
 data_spec <- data.frame(f=spx, espectro=spy)
