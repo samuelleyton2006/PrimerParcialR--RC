@@ -1,25 +1,27 @@
 # Punto 3: Comportamiento de TCP ante Congestión de Red
+## 📌 Objetivos principales  
 
-# 📌 Objetivos principales
-1.Simular la gestión de la congestión en TCP
+1. **Simular la gestión de la congestión en TCP**  
+   - Modelar cómo TCP ajusta dinámicamente la cantidad de datos transmitidos en función de pérdidas y éxitos.  
+   - Implementar un crecimiento exponencial en la fase inicial (**Slow Start**).  
+   - Reiniciar la ventana cuando hay congestión (**pérdida de paquete**).  
 
--Modelar cómo TCP ajusta dinámicamente la cantidad de datos transmitidos en función de pérdidas y éxitos.
--Implementar un crecimiento exponencial en la fase inicial (Slow Start).
--Reiniciar la ventana cuando hay congestión (pérdida de paquete).
+2. **Observar el crecimiento y reinicio de la ventana de congestión**  
+   - La **ventana de congestión (cwnd)** empieza en 1 y crece en cada transmisión exitosa.  
+   - Si ocurre una **pérdida de paquete**, la ventana se reinicia a 1.  
+   - Se ejecutan 20 transmisiones para ver cómo evoluciona `cwnd`.  
 
-2.Observar el crecimiento y reinicio de la ventana de congestión
--La ventana de congestión (cwnd) empieza en 1 y crece en cada transmisión exitosa.
--Si ocurre una pérdida de paquete, la ventana se reinicia a 1.
--Se ejecutan 20 transmisiones para ver cómo evoluciona cwnd.
+3. **Simular eventos aleatorios de éxito o pérdida de paquetes**  
+   - **Probabilidad del 80%** de éxito → Incrementa `cwnd`.  
+   - **Probabilidad del 20%** de pérdida → Reinicia `cwnd` a 1.  
+   - Uso de números aleatorios para hacer la simulación dinámica.  
 
-3.Simular eventos aleatorios de éxito o pérdida de paquetes
--Probabilidad del 80% de éxito → Incrementa cwnd.
--Probabilidad del 20% de pérdida → Reinicia cwnd a 1.
--Uso de números aleatorios para hacer la simulación dinámica.
+4. **Observar la eficiencia y estabilidad del protocolo**  
+   - La simulación muestra cómo TCP intenta usar más ancho de banda en condiciones estables.  
+   - También ilustra cómo TCP responde agresivamente cuando detecta congestión.  
 
-4. Observar la eficiencia y estabilidad del protocolo
--La simulación muestra cómo TCP intenta usar más ancho de banda en condiciones estables.
--También ilustra cómo TCP responde agresivamente cuando detecta congestión.
+---
+
 
 
 ``` py
