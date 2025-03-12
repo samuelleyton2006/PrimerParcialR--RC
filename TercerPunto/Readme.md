@@ -23,8 +23,9 @@
 ---
 
 
-
+# Codigo en Python 💻
 ``` py
+
 import random
 
 def evento_transmision(probabilidad_exito=0.8):
