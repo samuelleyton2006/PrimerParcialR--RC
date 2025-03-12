@@ -27,6 +27,7 @@
 ``` py
 
 import random
+import matplotlib.pyplot as plt
 
 def evento_transmision(probabilidad_exito=0.8):
     """Simula el resultado de una transmisión, devolviendo True si es exitosa."""
@@ -35,28 +36,31 @@ def evento_transmision(probabilidad_exito=0.8):
 def simular_tcp_congestion(transmisiones=20):
     """Ejecuta una simulación de control de congestión TCP (modelo Tahoe)."""
     ventana_congestion = 1  # Estado inicial de la ventana
-    registros = []
+    valores_cwnd = []
 
     for intento in range(1, transmisiones + 1):
         if evento_transmision():
             ventana_congestion += 1  # Aumenta si la transmisión tiene éxito
-            estado = "Éxito"
         else:
             ventana_congestion = 1  # Reinicio en caso de pérdida
-            estado = "Pérdida"
         
-        registros.append(f"Transmisión {intento}: {estado} - cwnd = {ventana_congestion}")
-    
-    return registros
+        valores_cwnd.append(ventana_congestion)
 
-def mostrar_evolucion(historial):
-    """Imprime el historial de la evolución de la ventana de congestión."""
-    for registro in historial:
-        print(registro)
+    return valores_cwnd
 
-# Ejecutar simulación
-resultado_tcp = simular_tcp_congestion()
-mostrar_evolucion(resultado_tcp)
+# Simular 
+valores_cwnd = simular_tcp_congestion()
+
+
+plt.figure(figsize=(20, 9))
+plt.plot(range(1, len(valores_cwnd) + 1), valores_cwnd, marker='o', linestyle='-', color='g', label="felipe")
+plt.xlabel("Transmision")
+plt.ylabel("Estado de congestión")
+plt.title("Congestion vs transmision ")
+plt.legend()
+plt.grid(True)
+plt.show()
+
 
 ```
 # Ejemplo de ejecucion del codigo 
